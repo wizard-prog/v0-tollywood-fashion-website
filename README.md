@@ -42,7 +42,7 @@ npm install
 npm run dev
 ```
 
-Visit `http://localhost:3000`.
+Visit (https://v0-tollywood-fashion-website-hlry496bb.vercel.app/)
 
 ## Deployment
 

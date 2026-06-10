@@ -1,87 +1,60 @@
 # Tollywood Threads
 
-E-commerce platform connecting fashion fans with character-inspired outfits from Telugu movies. Shop looks from Pushpa, Baahubali, RRR, Arjun Reddy, and more.
+Tollywood Threads is a fashion discovery platform that helps Telugu cinema fans find clothing and accessories inspired by iconic movie characters from films like Pushpa, Baahubali, and RRR. The platform curates character-based collections and redirects users to affiliate retailers for purchases.
 
-## What It Does
+## Features
 
-- Browse character-inspired fashion collections from Tollywood movies
-- Use AI Style Matcher to find outfits matching your preferences
-- Shop through affiliate links to Amazon, Flipkart, and other retailers
-- Explore character spotlights and movie-inspired styles
-
-## Quick Start
-
-```bash
-# Clone and install
-git clone https://github.com/wizard-prog/v0-tollywood-fashion-website.git
-cd v0-tollywood-fashion-website
-npm install
-
-# Run dev server
-npm run dev
-
-# Open browser to http://localhost:3000
-```
+- 130+ character-inspired products across 7 movie collections
+- AI Style Matcher for personalized character recommendations
+- Affiliate shopping integration with multiple retailers
+- Shopping cart with React Context API
+- Responsive design with optimized performance
+- SEO-friendly architecture
 
 ## Tech Stack
 
-- Next.js 14 + React 18 + TypeScript
-- Tailwind CSS + Framer Motion (animations)
-- Vercel AI SDK (style recommendations)
-- React Context API (cart state)
-- Vercel hosting
+**Frontend:** Next.js 14, React 18, TypeScript, Tailwind CSS, Framer Motion
+
+**Backend:** Next.js App Router, Server Actions, Vercel AI SDK
+
+**Hosting:** Vercel
+
+**State Management:** React Context API
+
+## Architecture
+
+**Client Layer:** React components, Tailwind CSS, Framer Motion, Context API
+
+**Server Layer:** Next.js App Router, Server Components, Server Actions, AI Style Matcher
+
+**Data Layer:** Static TypeScript data (lib/data.ts) containing products, characters, and affiliate links
 
 ## Project Structure
 
 ```
-app/                    # Pages (home, collections, cart, etc.)
-components/            # Reusable UI components
-lib/                   # Data, types, and utilities
-public/images/        # Product and character images
+app/          # Pages and routes
+components/   # Reusable UI components
+lib/          # Data, types, and cart context
+public/       # Images and static assets
 ```
 
-## Features
+## Getting Started
 
-- Character-organized product collections
-- Cinematic dark UI with neon accents and animations
-- AI-powered style matching
-- Shopping cart with React Context
-- Affiliate redirects to partner sites
-- Mobile responsive design
-- Fast with lazy loading and code splitting
+```bash
+git clone https://github.com/wizard-prog/v0-tollywood-fashion-website.git
+cd v0-tollywood-fashion-website
+npm install
+npm run dev
+```
 
-## Key Components
-
-- **Floating Product Cards** - Animated 3D cards with genre-based colors
-- **AI Style Matcher** - Analyzes preferences and recommends character matches
-- **Cinematic Navbar** - Navigation with logo, cart, and auth
-- **Character Spotlights** - Featured character style guides
+Visit https://v0-tollywood-fashion-website-hlry496bb.vercel.app/
 
 ## Deployment
 
-Live at: https://vercel.com/saiabhinavrentala-1919s-projects/v0-tollywood-fashion-website
-
-Push to main branch for automatic Vercel deployment.
-
-## Environment Setup
-
-Create `.env.local`:
-```env
-NEXT_PUBLIC_APP_NAME=Tollywood Threads
-```
-
-## Troubleshooting
-
-**Port in use**: `npm run dev -- -p 3001`
-
-**Images not loading**: Verify files exist in `/public/images/` and paths match in data
-
-**Animations stuttering**: Enable hardware acceleration in browser
+Push to the main branch for automatic deployment on Vercel.
 
 ## License
 
 MIT
 
----
-
-Built with Next.js, React, TypeScript, Tailwind CSS, and Framer Motion. Hosted on Vercel.
+Built to connect Telugu cinema culture with fashion commerce through immersive, character-driven shopping experiences.
